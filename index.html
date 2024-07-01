@@ -6,15 +6,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <form id="todo-form">
-            <input type="text" id="task-input" placeholder="Add a task...">
-            <button type="submit">Add Task</button>
-        </form>
-        <ul id="task-list"></ul>
+    <div id="myDIV" class="header">
+        <h2>My To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
     </div>
-
+    <ul id="myUL">
+        <li>Go to the Gym</li>
+        <li class="checked">Eat Breakfast</li>
+        <li>Do Laundry</li>
+        <li>Take Supplements</li>
+        <li>Go On A 30min Run</li>
+    </ul>
     <script src="script.js"></script>
 </body>
 </html>
+
